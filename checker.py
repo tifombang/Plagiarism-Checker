@@ -105,14 +105,14 @@ def compare_documents():
     are_similar, similarity_score = compare_documents_rolling_hash(doc1_content, doc2_content, window_size, threshold)
 
     result_label.config(
-        text=f"Similarity: {similarity_score:.2f}. Documents are {'similar' if are_similar else 'not similar'}."
+        text=f"Similarity: {similarity_score:.2f}.  {'Oh snap!!! Documents are similar' if are_similar else 'Documents are not similar'}."
     )
 
 
 # --- GUI setup using Tkinter ---
 
 root = tk.Tk()
-root.title("Document Comparison")
+root.title("Plagiarism Checker")
 
 # File selection (Document 1)
 file_path1_var = tk.StringVar()
