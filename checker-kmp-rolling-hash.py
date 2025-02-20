@@ -210,7 +210,7 @@ def open_file_dialog(file_path_var):
         file_path_var (tk.StringVar): Variable to store the selected file path.
     """
     filepath = filedialog.askopenfilename(
-        title="Select a Text File", filetypes=(("Text Files", "*.txt"),)
+        title="Select a Text File", filetypes=(("Text Files", "*.txt"),))
     if filepath:
         file_path_var.set(filepath)
 
