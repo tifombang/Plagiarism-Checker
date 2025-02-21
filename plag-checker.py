@@ -133,13 +133,13 @@ file2_button = tk.Button(root, text="Browse", command=lambda: open_file_dialog(f
 file2_button.grid(row=1, column=2, padx=5, pady=5)
 
 # Parameters
-window_size_label = tk.Label(root, text="Window Size:")
+window_size_label = tk.Label(root, text="Text block Size:")
 window_size_label.grid(row=2, column=0, sticky="w")
 window_size_entry = tk.Entry(root, width=10)
 window_size_entry.insert(0, "20")  # Default value
 window_size_entry.grid(row=2, column=1, padx=5, pady=5)
 
-threshold_label = tk.Label(root, text="Threshold (0-1):")
+threshold_label = tk.Label(root, text="Sensitivity (0-1):")
 threshold_label.grid(row=3, column=0, sticky="w")
 threshold_entry = tk.Entry(root, width=10)
 threshold_entry.insert(0, "0.8")  # Default value
