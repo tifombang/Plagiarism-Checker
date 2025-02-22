@@ -21,6 +21,9 @@ except LookupError:
     nltk.download('punkt')
 
 
+# Preprocessing of the Documents
+# - lowercase, tokenization, stopword removal, etc. - #
+
 def preprocess_text(text):
     """Preprocesses the text for plagiarism detection."""
     text = text.lower()
