@@ -1,3 +1,4 @@
+# Plagiarism Police (beta 1) build 100
 # An AI-based Plagiarism checker application 
 
 
@@ -115,7 +116,7 @@ def compare_documents():
 # --- GUI setup using Tkinter ---
 
 root = tk.Tk()
-root.title("Plagiarism Checker")
+root.title("Plagiarism Police (beta 1)")
 
 # File selection (Document 1)
 file_path1_var = tk.StringVar()
